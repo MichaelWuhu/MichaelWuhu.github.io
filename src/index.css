@@ -8,11 +8,11 @@
 }
 
 body {
-  background: #000;
+  background: #222326;
 }
 
 h1, h4, p, a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
