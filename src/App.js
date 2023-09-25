@@ -3,7 +3,9 @@ import './index.css';
 
 import Home from './routes/Home';
 import Experience from './routes/Experience';
-import Organizations from './routes/Organizations';
+import About from './routes/About';
+
+import Navbar from './components/Navbar';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -11,10 +13,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Experience" element={<Experience />} />
-          <Route path="/Organizations" element={<Organizations />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>
