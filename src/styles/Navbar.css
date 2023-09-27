@@ -31,14 +31,14 @@
         height: 100vh;
         background: #222326;
         position: absolute;
-        top: 0;
-        left: -100%;
-        z-index: -3;
-        transition: 0.3s;
+        top: -100%;
+        left: 0;
+        z-index: 1;
+        transition: 0.35s;
     }
 
     .nav-menu.active {
-        left: 0;
+        top: 0;
     }
 
     .nav-menu li {
@@ -51,6 +51,7 @@
 
     .hamburger {
         display: initial;
+        z-index: 2;
     }
 }
 

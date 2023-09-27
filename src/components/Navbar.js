@@ -8,20 +8,22 @@ const Navbar = () => {
 
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
+    const closeMenu = () => setClick(false);
 
     return (
         <div className='header'>
-            <Link to='/'><h1>MICHAEL WU</h1></Link>
+            <Link to='/' onClick={closeMenu}><h1>MICHAEL WU</h1></Link>
             <ul className={ click ? "nav-menu active" : "nav-menu"}>
-                <li><Link className='link' to='/'>Home</Link></li>
-                <li><Link className='link' to='/About'>About</Link></li>
-                <li><Link className='link' to='/Experience'>Experience</Link></li>
+                <li><Link className='link' to='/' onClick={closeMenu}>Home</Link></li>
+                <li><Link className='link' to='/About' onClick={closeMenu}>About</Link></li>
+                <li><Link className='link' to='/Experience' onClick={closeMenu}>Experience</Link></li>
             </ul>
 
             <div className='hamburger' onClick={handleClick}>
                 { click ? 
-                    (<FaTimes size={20} style={{ color: 'black' }} />) : 
-                    (<FaBars size={20} style={{ color: 'black' }} />) }
+                    (<FaTimes size={30} style={{ color: 'white'}} />) : 
+                    (<FaBars size={30} style={{ color: 'white'}} />) 
+                }
             </div>
         </div>
     );
