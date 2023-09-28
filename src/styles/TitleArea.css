@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    background: linear-gradient(#222326, #37383b);
 }
 
 .Title {

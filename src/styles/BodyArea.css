@@ -1,5 +1,5 @@
 .Body {
-    background-color: darkslategrey;
+    background: linear-gradient(#37383b, #494a4f);
     display: flex;
     flex-direction: row;
     width: 100%;

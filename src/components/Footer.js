@@ -15,11 +15,13 @@ const Footer = () => {
       <div className="footer-container">
         <div className="left">
           <div className="location">
-            <FaHome size={30} style={{ color: "white", marginRight: "2rem" }} />
-            <div>
-              <p>123 street address</p>
-              <p>Country</p>
-            </div>
+            <h4>
+              <FaHome
+                size={30}
+                style={{ color: "white", marginRight: "2rem" }}
+              />
+              Diamond Bar, CA
+            </h4>
           </div>
 
           <div className="phone">
@@ -28,7 +30,7 @@ const Footer = () => {
                 size={30}
                 style={{ color: "white", marginRight: "2rem" }}
               />
-              123-456-7890
+              909-918-9550
             </h4>
           </div>
 
@@ -38,7 +40,7 @@ const Footer = () => {
                 size={30}
                 style={{ color: "white", marginRight: "2rem" }}
               />
-              email@gmail.com
+              mlmichaelwu@gmail.com
             </h4>
           </div>
         </div>
@@ -47,15 +49,18 @@ const Footer = () => {
           <h4>about</h4>
           <p>who what whatever whatever whatever whatever whatever </p>
           <div className="social">
-            <FaLinkedin
-              size={30}
-              style={{ color: "white", marginRight: "1rem" }}
-              href={"https://www.linkedin.com/in/michael-ml-wu/"}
-            />
-            <FaGithub
-              size={30}
-              style={{ color: "white", marginRight: "1rem" }}
-            />
+            <a href="https://www.linkedin.com/in/michael-ml-wu/" target="_blank">
+              <FaLinkedin
+                size={30}
+                style={{ color: "white", marginRight: "1rem" }}
+              />
+            </a>
+            <a href="https://github.com/MichaelWuhu" target="_blank">
+              <FaGithub
+                size={30}
+                style={{ color: "white", marginRight: "1rem" }}
+              />
+            </a>
           </div>
         </div>
       </div>

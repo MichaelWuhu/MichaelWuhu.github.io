@@ -26,8 +26,14 @@
     margin-bottom: 0.8rem;
 }
 
-.location p {
-    line-height: 30px;
+.phone {
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.email {
+    display: flex;
+    margin-bottom: 0.8rem;
 }
 
 .right {
@@ -39,7 +45,7 @@
 }
 
 .social {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 h4 {
