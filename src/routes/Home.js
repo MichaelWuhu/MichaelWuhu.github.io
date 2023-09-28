@@ -1,16 +1,19 @@
-import '../styles/Home.css';
+import "../styles/Home.css";
 
-import React from 'react';
+import TitleArea from "../components/TitleArea";
+import BodyArea from "../components/BodyArea";
+import Footer from "../components/Footer";
+
+
+import React from "react";
 
 const Home = () => {
-    const title = 'Hi. I\'m Michael.';
-    
-    return (
-        <div className='Home'>
-            <div className='Title'>{title}</div>
-            <div className='Body'>PROJECTS</div> 
-        </div>
-    );
-}
+  return (
+    <div className="Home">
+      <TitleArea title="Hi. I'm Michael" />
+      <BodyArea />
+    </div>
+  );
+};
 
 export default Home;
