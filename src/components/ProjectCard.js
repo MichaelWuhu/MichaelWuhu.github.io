@@ -1,29 +1,23 @@
 import "../styles/ProjectCard.css";
-import temp from "../images/temp image.png";
 
 import React from "react";
 
 const ProjectCard = (props) => {
-  const project_title = props.projectTitle;
-  const general_text = props.generalText;
-  const bullet_points = props.bulletPoints;
-  const project_image = props.projectImage;
-  const image_alt_text = props.imageAltText;
-  const button_link = props.buttonLink;
-  const button_text = props.buttonText;
+  // project_title, general_text, project_image, button_link
+  // https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+  const { projectTitle, role, generalText, projectImage, buttonLink } = props;  
 
   return (
     <div className="Project-Card">
-      <div className="Project-Title">Title</div>
-      <p className="Project-Text">
-        project info smthing smthing smthing smthing smthing smthing smthing
-        smthing smthing smthing smthing smthing smthing smthing smthing smthing
-        smthing smthing smthing smthing
-      </p>
-      <img className="Project-Image" src={temp} alt="Project Img" />
-      <a href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"} target="_blank" rel="noreferrer">
+      <div className="Project-Title">{projectTitle}</div>
+      <div className="Role">{role}</div>
+      <div className="Line-Under-Role"></div>
+      <p className="Project-Text">{generalText}</p>
+      <img className="Project-Image" src={projectImage} alt="" />
+      <a href={buttonLink} target="_blank" rel="noreferrer">
         <button className="Project-Button" type="button">
-          {"BUTTON"}
+          {"Link"}
         </button>
       </a>
     </div>
