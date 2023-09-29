@@ -46,16 +46,16 @@ const Footer = () => {
         </div>
 
         <div className="right">
-          <h4>about</h4>
-          <p>who what whatever whatever whatever whatever whatever </p>
+          <h4>About Me</h4>
+          <p>I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in computer science. Come check out my linkedin and github! </p>
           <div className="social">
-            <a href="https://www.linkedin.com/in/michael-ml-wu/" target="_blank">
+            <a href="https://www.linkedin.com/in/michael-ml-wu/" target="_blank"  rel="noreferrer">
               <FaLinkedin
                 size={30}
                 style={{ color: "white", marginRight: "1rem" }}
               />
             </a>
-            <a href="https://github.com/MichaelWuhu" target="_blank">
+            <a href="https://github.com/MichaelWuhu" target="_blank"  rel="noreferrer">
               <FaGithub
                 size={30}
                 style={{ color: "white", marginRight: "1rem" }}

@@ -31,11 +31,11 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="link" to="/About" onClick={closeMenu}>
             About
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link className="link" to="/Experience" onClick={closeMenu}>
             Experience

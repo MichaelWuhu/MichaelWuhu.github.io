@@ -1,5 +1,39 @@
-.Project_Card {
-    background-color: aqua;
+.Project-Card {
+    background: linear-gradient(#37383b, #222326);
     width: 30%;
-    height: 75vh;
+    height: fit-content ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.Project-Title {
+    color: #c9c9c9;
+    text-decoration: underline;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.Project-Text {
+    color: #c9c9c9;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.Project-Image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 95%;
+    max-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.Project-Button {
+    display: block;
+    margin: 1rem auto;
+    width: 7.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #c9c9c9;
 }
