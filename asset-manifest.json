@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2aadfb48.css",
+    "main.js": "/static/js/main.3a47b74b.js",
+    "static/js/787.bdf370df.chunk.js": "/static/js/787.bdf370df.chunk.js",
+    "static/media/personal website.png": "/static/media/personal website.a3fd8d7529d2d4c75da7.png",
+    "static/media/profile picture.png": "/static/media/profile picture.0c06b3db6f99fed93134.png",
+    "static/media/sprocket stats.png": "/static/media/sprocket stats.537d4ef7c6a0f0acacb2.png",
+    "static/media/anagrams solver.png": "/static/media/anagrams solver.5eaf783753e6299ccd28.png",
+    "index.html": "/index.html",
+    "main.2aadfb48.css.map": "/static/css/main.2aadfb48.css.map",
+    "main.3a47b74b.js.map": "/static/js/main.3a47b74b.js.map",
+    "787.bdf370df.chunk.js.map": "/static/js/787.bdf370df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2aadfb48.css",
+    "static/js/main.3a47b74b.js"
+  ]
+}
