@@ -1,0 +1,37 @@
+.Body {
+    background: linear-gradient(#37383b, gray);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 125vh;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    padding: 10rem 0;
+}
+
+.Projects-Section-Title {
+    width: 100%;
+    text-align: center;
+    background: -webkit-linear-gradient(white, gray);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.Projects {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1040px) {
+    .Projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

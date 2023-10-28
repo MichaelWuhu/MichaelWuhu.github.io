@@ -1,0 +1,64 @@
+.Project-Card {
+    background: linear-gradient(#37383b, #222326);
+    width: 30%;
+    height: 100% ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.Project-Title {
+    height: 12%;
+    color: #c9c9c9;
+    text-decoration: underline;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.Project-Role {
+    height: 8%;
+    color: #c4c4c4;
+    font-size: 2rem;
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.Line-Under-Role {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 2.5px;
+    background-color: #c4c4c4;
+    margin: 1rem auto;
+}
+
+.Project-Text {
+    height: 20%;
+    color: #c9c9c9;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0 1rem;
+}
+
+.Project-Image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 95%;
+    height: 38%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.Project-Button {
+    display: block;
+    margin: 1rem auto;
+    margin-top: 1.5rem;
+    width: 9rem;
+    height: 7%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #5A5A5A;
+    color: white;
+    cursor: pointer;
+}
