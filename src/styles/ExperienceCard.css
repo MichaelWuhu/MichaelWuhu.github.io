@@ -1,25 +1,36 @@
-.Project-Card {
-    background: linear-gradient(#37383b, #222326);
-    width: 30%;
+.Experience-Card {
+    background:  linear-gradient(#37383b, #757575);
+    width: 90%;
     height: 100% ;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 15px;
+    margin: 2.5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: center;
 }
 
-.Project-Title {
-    height: 12%;
+.Experience-Info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 75%;
+    /* background-color: blue; */
+}
+
+.Experience-Title {
     color: #c9c9c9;
+    font-size: 2rem;
     text-decoration: underline;
-    padding: 0 1rem;
-    text-align: center;
+    padding: 2rem;
 }
 
-.Project-Role {
-    height: 8%;
+.Experience-Role {
     color: #c4c4c4;
     font-size: 2rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
     padding-bottom: 0.5rem;
-    text-align: center;
 }
 
 .Line-Under-Role {
@@ -32,7 +43,7 @@
     margin: 1rem auto;
 }
 
-.Project-Text {
+.Experience-Text {
     height: 20%;
     color: #c9c9c9;
     font-size: 1.25rem;
@@ -40,25 +51,8 @@
     padding: 0 1rem;
 }
 
-.Project-Image {
+.Experience-Image {
     display: block;
-    margin: 1rem auto;
-    max-width: 95%;
-    height: 38%;
     object-fit: cover;
     overflow: hidden;
-}
-
-.Project-Button {
-    display: block;
-    margin: 1rem auto;
-    margin-top: 1.5rem;
-    width: 9rem;
-    height: 7%;
-    border: 1px solid rgba(0, 0, 0, 0);
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #5A5A5A;
-    color: white;
-    cursor: pointer;
 }
