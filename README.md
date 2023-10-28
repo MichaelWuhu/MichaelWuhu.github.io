@@ -1,8 +1,12 @@
-HI Welcome to my website!
+# Michael's Website
+
+Hello.
 
 ## Available Scripts
 
-In the project directory, you can run:
+These are more like just a reminder to myself, because I'd be kind of surprised if this becomes a ginormous project with hundreds of contributors.
+
+However, because this isn't a massive scale corporation that requires many tests and careful reviews before publishing, I really only use these two following commands.
 
 ### `npm start`
 
@@ -12,3 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm run deploy`
+
+Publishes the deploy to GH pages. You can also use `$ npm run deploy -- -m "Deploy React app to GitHub Pages"` to specify a commit message.
