@@ -1,7 +1,6 @@
 import "../styles/Home.css";
 
 import React from "react";
-
 import ProjectCard from "../components/ProjectCard";
 
 import icebreak from "../images/icebreak.png";

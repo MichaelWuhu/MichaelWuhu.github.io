@@ -5,3 +5,9 @@
     color: white;
     padding-top: 5rem;
 }
+
+.experience-header {
+    font-size: 3.5rem;
+    margin-top: 2.5rem;
+    text-decoration: underline;
+}
