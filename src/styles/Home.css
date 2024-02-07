@@ -5,6 +5,7 @@
     color: white;
     padding-top: 5rem;
     min-height: 80vh;
+    width: 100%;
 }
 
 .greeting {
@@ -20,4 +21,12 @@
     font-size: 3.5rem;
     margin-top: 20rem;
     text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .description {
+        max-width: 20rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
 }

@@ -25,7 +25,7 @@
 }
 
 .project-description {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .project-image-container {
@@ -47,4 +47,27 @@
   cursor: pointer;
   border-radius: 5px;
   color: white;
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    width: 20rem;
+    height: 25rem;
+    flex-direction: column;
+  }
+
+  .project-text {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .project-image-container {
+    width: 100%;
+    height: 50%;
+  }
 }
