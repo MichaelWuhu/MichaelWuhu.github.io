@@ -1,26 +1,43 @@
 import "../styles/Experience.css";
 
-import ExperienceCard from "../components/ExperienceCard";
-import Footer from "../components/Footer";
-
-import sprocketLogo from "../images/sprocket.png"
-
 import React from "react";
+import ExperienceCard from "../components/ExperienceCard";
+
+import cppcss from "../images/cpp css.png";
+import sprocket from "../images/sprocket.png";
 
 const Experience = () => {
+  const experiences = [
+    {
+      title: "Computer Science Society (ACM)",
+      role: "Project Chair",
+      description: "California State Polytechnic University, Pomona's oldest computer science club offering students on campus workshops, projects, and hackathons to participate in.",
+      image: cppcss,
+      imageAltText: "cppcss",
+    },
+    {
+      title: "Team Sprocket (FRC 3473)",
+      role: "Software Engineer",
+      description: "Student led, robotics team in Diamond Bar participating in FIRST Robotics competitions.",
+      image: sprocket,
+      imageAltText: "sprocket",
+    },
+  ];
+
   return (
-    <div className="Experience">
-      <h1 className="Heading">Experience</h1>
-      <ExperienceCard
-        experienceTitle="Team 3473 Sprocket Robotics"
-        role="Software Engineer"
-        generalText="Team 3473 is Diamond Bar High School's competitive robotics team. 
-        On this team, I led the frontend development of the robot scouting app used by 
-        members to collect data on other team's robots. The data was then analyzed and 
-        visualized to help determine who we would form alliances with in the playoffs."
-        experienceImage={sprocketLogo}
-      />
-      <Footer />
+    <div className="experience">
+      <div className="experience-header">Experience</div>
+      <ul>
+        {experiences.map((experience) => (
+          <ExperienceCard
+          experienceName={experience.title}
+          experienceRole={experience.role}
+          experienceDescription={experience.description}
+          experienceImage={experience.image}
+          experienceImageAltText={experience.imageAltText}
+        />
+        ))}
+      </ul>
     </div>
   );
 };

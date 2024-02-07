@@ -3,23 +3,19 @@ import "../styles/ProjectCard.css";
 import React from "react";
 
 const ProjectCard = (props) => {
-  // project_title, general_text, project_image, button_link
-  // https://www.youtube.com/watch?v=dQw4w9WgXcQ
-
-  const { projectTitle, role, generalText, projectImage, buttonLink } = props;  
-
   return (
-    <div className="Project-Card">
-      <div className="Project-Title">{projectTitle}</div>
-      <div className="Project-Role">{role}</div>
-      <div className="Line-Under-Role"></div>
-      <p className="Project-Text">{generalText}</p>
-      <img className="Project-Image" src={projectImage} alt="" />
-      <a href={buttonLink} target="_blank" rel="noreferrer">
-        <button className="Project-Button" type="button">
-          {"Link"}
-        </button>
-      </a>
+    <div className="project-card">
+      <div className="project-text">
+        <div className="project-name">{props.projectName}</div>
+        <div className="project-description">{props.projectDescription}</div>
+      </div>
+      <div className="project-image-container">
+        <img
+          className="project-image"
+          src={props.projectImage}
+          alt={props.projectImageAltText}
+        />
+      </div>
     </div>
   );
 };

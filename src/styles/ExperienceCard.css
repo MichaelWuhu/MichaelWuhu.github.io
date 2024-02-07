@@ -1,58 +1,84 @@
-.Experience-Card {
-    background:  linear-gradient(#37383b, #757575);
-    width: 90%;
-    height: 100% ;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+.experience-card {
+    background-color: silver;
+    height: 15rem;
+    width: 75rem;
+    margin: 3.5rem;
     border-radius: 15px;
-    margin: 2.5rem;
     display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
-    justify-content: center;
-}
-
-.Experience-Info {
+    padding: 1rem;
+    font-size: 2rem;
+    flex-direction: row;
+    background-image: linear-gradient(45deg, #57504d, #393433);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  .experience-text {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
-    width: 75%;
-    /* background-color: blue; */
-}
-
-.Experience-Title {
-    color: #c9c9c9;
-    font-size: 2rem;
+    width: 70%;
+  }
+  
+  .experience-name {
     text-decoration: underline;
-    padding: 2rem;
-}
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
 
-.Experience-Role {
-    color: #c4c4c4;
-    font-size: 2rem;
-    padding: 0 2rem;
-    padding-bottom: 0.5rem;
-}
+  .experience-description {
+    font-size: 1.5rem;
+  }
 
-.Line-Under-Role {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    height: 2.5px;
-    background-color: #c4c4c4;
-    margin: 1rem auto;
-}
-
-.Experience-Text {
-    height: 20%;
-    color: #c9c9c9;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    padding: 0 1rem;
-}
-
-.Experience-Image {
-    display: block;
-    object-fit: cover;
+  /* .experience-role {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  } */
+  
+  .experience-image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .experience-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     overflow: hidden;
-}
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 700px) {
+    .experience-card {
+      width: 20rem;
+      height: 25rem;
+      flex-direction: column;
+    }
+  
+    .experience-text {
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      justify-content: space-around;
+    }
+  
+    .experience-name {
+      font-size: 1.15rem;
+      flex-direction: column;
+    }
+
+    .experience-hyphen {
+      display: none;
+    }
+
+    .experience-description {
+      font-size: 1rem;
+    }
+  
+    .experience-image-container {
+      width: 100%;
+      height: 50%;
+    }
+  }
+  
