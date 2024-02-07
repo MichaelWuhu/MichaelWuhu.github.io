@@ -11,19 +11,19 @@ const Home = () => {
   const projects = [
     {
       title: "Icebreak",
-      description: "one",
+      description: "Mobile app created for students/users to connect with others through clubs/guilds and stay updated with events on campus. ",
       image: icebreak,
       imageAltText: "icebreak ",
     },
     {
       title: "Sprocket Stats",
-      description: "two",
+      description: "Web application used for scouting/collecting data on various FRC robots. Data was then visualized in heatmaps to be used in competitions.",
       image: sprocketstats,
       imageAltText: "sprocket stats",
     },
     {
       title: "Anagrams Solver",
-      description: "three",
+      description: "Graphical user interface which takes any amount of letters and unscrambles them to find all possible anagrams (based on the scrabble dictionary).",
       image: anagramsSolver,
       imageAltText: "anagrams solver",
     },

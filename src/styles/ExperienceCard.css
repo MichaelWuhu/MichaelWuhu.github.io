@@ -20,7 +20,17 @@
   
   .experience-name {
     text-decoration: underline;
+    margin-bottom: 1rem;
   }
+
+  .experience-description {
+    font-size: 1.5rem;
+  }
+
+  /* .experience-role {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  } */
   
   .experience-image-container {
     width: 30%;

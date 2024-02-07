@@ -9,7 +9,8 @@
   font-size: 2rem;
   flex-direction: row;
   background-image: linear-gradient(45deg, #57504d, #393433);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .project-text {
@@ -20,6 +21,11 @@
 
 .project-name {
   text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+    font-size: 1.5rem;
 }
 
 .project-image-container {
@@ -32,4 +38,13 @@
   object-fit: contain;
   overflow: hidden;
   border-radius: 8px;
+}
+
+.project-button {
+  height: 2rem;
+  width: 5rem;
+  background-color: darkred;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
 }

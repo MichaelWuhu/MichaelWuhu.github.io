@@ -32,15 +32,15 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className="link" to="/About" onClick={closeMenu}>
-            About
-          </Link>
-        </li>
-        <li>
           <Link className="link" to="/Experience" onClick={closeMenu}>
             Experience
           </Link>
         </li>
+        {/* <li>
+          <Link className="link" to="/About" onClick={closeMenu}>
+            About
+          </Link>
+        </li> */}
       </ul>
 
       <div className="hamburger" onClick={handleClick}>

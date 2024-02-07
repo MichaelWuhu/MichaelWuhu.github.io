@@ -4,6 +4,7 @@
     align-items: center;
     color: white;
     padding-top: 5rem;
+    min-height: 80vh;
 }
 
 .greeting {

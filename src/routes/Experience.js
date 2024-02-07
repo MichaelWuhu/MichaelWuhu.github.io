@@ -10,13 +10,15 @@ const Experience = () => {
   const experiences = [
     {
       title: "Computer Science Society (ACM)",
-      description: "one",
+      role: "Project Chair",
+      description: "California State Polytechnic University, Pomona's oldest computer science club offering students on campus workshops, projects, and hackathons to participate in.",
       image: cppcss,
       imageAltText: "cppcss",
     },
     {
       title: "Team Sprocket (FRC 3473)",
-      description: "two",
+      role: "Software Engineer",
+      description: "Student led, robotics team in Diamond Bar participating in FIRST Robotics competitions.",
       image: sprocket,
       imageAltText: "sprocket",
     },
@@ -29,6 +31,7 @@ const Experience = () => {
         {experiences.map((experience) => (
           <ExperienceCard
           experienceName={experience.title}
+          experienceRole={experience.role}
           experienceDescription={experience.description}
           experienceImage={experience.image}
           experienceImageAltText={experience.imageAltText}
