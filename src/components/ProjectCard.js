@@ -2,7 +2,7 @@ import "../styles/ProjectCard.css";
 
 import React from "react";
 
-const ProjectCard = (props) => {
+const TempProjectCard = (props) => {
   return (
     <div className="project-card">
       <div className="project-text">
@@ -20,4 +20,4 @@ const ProjectCard = (props) => {
   );
 };
 
-export default ProjectCard;
+export default TempProjectCard;

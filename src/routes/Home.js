@@ -32,12 +32,10 @@ const Home = () => {
     },
   ];
 
-  // const projects = [{title: "temp 1", description: "test desc 1", image: anagramsSolver, imageAltText: "temp sfabf"}];
-
   return (
     <div className="home">
-      {/* <div className="greeting">Hi, I'm Michael</div> */}
-      <div className="greeting">TEMP</div>
+      <div className="greeting">Hi, I'm Michael</div>
+      {/* <div className="greeting">TEMP</div> */}
       <div className="description">
         I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in
         computer science.
