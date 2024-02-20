@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  /* color: white; */
+  color: var(--dark-text-color);
+  /* color: var(--dark-text-color); */
   padding-top: 5rem;
   min-height: 80vh;
   width: 100%;
