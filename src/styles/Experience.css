@@ -8,6 +8,15 @@
   min-height: 80vh;
 }
 
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(var(--background-color), #393433);
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 .experience-header {
   font-size: 3.5rem;
   margin-top: 2.5rem;

@@ -21,35 +21,75 @@ const Navbar = () => {
   window.addEventListener("scroll", changeColor);
 
   return (
-    <div className={color ? "header header-bg" : "header"}>
-      <Link to="/" onClick={closeMenu}>
+    <div className={color ? "header header-bg a " : "header"}>
+      <Link className={color ? "header-link" : ""} to="/" onClick={closeMenu}>
         <h1>MICHAEL WU</h1>
       </Link>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
-          <Link className="link" to="/" onClick={closeMenu}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to="/Experience" onClick={closeMenu}>
-            Experience
-          </Link>
-        </li>
-        {/* <li>
+      <div className="links">
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li>
+            <Link className="link" to="/" onClick={closeMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/Experience" onClick={closeMenu}>
+              Experience
+            </Link>
+          </li>
+          {/* <li>
           <Link className="link" to="/About" onClick={closeMenu}>
             About
           </Link>
         </li> */}
-      </ul>
+        </ul>
+      </div>
 
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={30} style={{ color: "white" }} />
+          <FaTimes
+            size={30}
+            style={color ? { color: "#588157" } : { color: "#3a5a40" }}
+          />
         ) : (
-          <FaBars size={30} style={{ color: "white" }} />
+          <FaBars
+            size={30}
+            style={color ? { color: "#588157" } : { color: "#3a5a40" }}
+          />
         )}
       </div>
+
+      {/* <div className="hamburger" onClick={handleClick}>
+        {click ? (
+          <div className="hamburger-open">
+            <FaTimes
+              size={30}
+              style={color ? { color: "#588157" } : { color: "#3a5a40" }}
+            />
+            <div className="hamburger-links">
+              <ul>
+                <li>
+                  <Link className="link" to="/" onClick={closeMenu}>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link className="link" to="/Experience" onClick={closeMenu}>
+                    Experience
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <div>
+            <FaBars
+              size={30}
+              style={color ? { color: "#588157" } : { color: "#3a5a40" }}
+            />
+          </div>
+        )}
+      </div> */}
     </div>
   );
 };

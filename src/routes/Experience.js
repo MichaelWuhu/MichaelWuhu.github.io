@@ -11,14 +11,16 @@ const Experience = () => {
     {
       title: "Computer Science Society (ACM)",
       role: "Project Chair",
-      description: "California State Polytechnic University, Pomona's oldest computer science club offering students on campus workshops, projects, and hackathons to participate in.",
+      description:
+        "California State Polytechnic University, Pomona's oldest computer science club offering students on campus workshops, projects, and hackathons to participate in.",
       image: cppcss,
       imageAltText: "cppcss",
     },
     {
       title: "Team Sprocket (FRC 3473)",
       role: "Software Engineer",
-      description: "Student led, robotics team in Diamond Bar participating in FIRST Robotics competitions.",
+      description:
+        "Student led, robotics team in Diamond Bar participating in FIRST Robotics competitions.",
       image: sprocket,
       imageAltText: "sprocket",
     },
@@ -26,18 +28,20 @@ const Experience = () => {
 
   return (
     <div className="experience">
-      <div className="experience-header">Experience</div>
-      <ul>
-        {experiences.map((experience) => (
-          <ExperienceCard
-          experienceName={experience.title}
-          experienceRole={experience.role}
-          experienceDescription={experience.description}
-          experienceImage={experience.image}
-          experienceImageAltText={experience.imageAltText}
-        />
-        ))}
-      </ul>
+      <div className="experiences-container">
+        <div className="experience-header">Experience</div>
+        <ul>
+          {experiences.map((experience) => (
+            <ExperienceCard
+              experienceName={experience.title}
+              experienceRole={experience.role}
+              experienceDescription={experience.description}
+              experienceImage={experience.image}
+              experienceImageAltText={experience.imageAltText}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
