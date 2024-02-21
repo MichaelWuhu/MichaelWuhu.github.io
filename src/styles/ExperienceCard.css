@@ -1,6 +1,6 @@
 .experience-card {
   background-color: var(--secondary-color);
-  color: var(--dark-text-color);
+  color: var(--light-text-color);
   height: 15rem;
   width: 75rem;
   margin: 3.5rem;

@@ -8,12 +8,12 @@
 }
 
 body {
-  background: var(--background-color);
+  background: var(--background-color-2);
 }
 
 a {
   text-decoration: none;
-  color: var(--dark-text-color);
+  color: var(--light-text-color);
 }
 
 /* h1, h4, p, a {

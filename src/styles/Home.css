@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* color: white; */
-  color: var(--dark-text-color);
+  background-color: var(--background-color);
+  color: var(--light-text-color);
   padding-top: 5rem;
   min-height: 80vh;
   width: 100%;
@@ -21,7 +21,7 @@
 .projects-container {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(var(--background-color), #393433);
+  background-image: linear-gradient(var(--background-color), var(--background-color-2));
   justify-content: space-around;
   align-items: center;
   width: 100%;

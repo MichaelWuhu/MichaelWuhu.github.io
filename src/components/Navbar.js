@@ -26,7 +26,7 @@ const Navbar = () => {
         <h1>MICHAEL WU</h1>
       </Link>
       <div className="links">
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul className="nav-menu">
           <li>
             <Link className="link" to="/" onClick={closeMenu}>
               Home
@@ -45,18 +45,15 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="hamburger" onClick={handleClick}>
-        {click ? (
-          <FaTimes
-            size={30}
-            style={color ? { color: "#588157" } : { color: "#3a5a40" }}
-          />
-        ) : (
-          <FaBars
-            size={30}
-            style={color ? { color: "#588157" } : { color: "#3a5a40" }}
-          />
-        )}
+      <div className="hamburger-container" onClick={handleClick}>
+        <div className="hamburger-menu">
+          {click ? (
+            <FaTimes size={30} style={{ color: "#E0E1DD" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#E0E1DD" }} />
+          )}
+        </div>
+        {/* {click ? <div>open</div> : <div>closed</div>} */}
       </div>
 
       {/* <div className="hamburger" onClick={handleClick}>
@@ -67,7 +64,7 @@ const Navbar = () => {
               style={color ? { color: "#588157" } : { color: "#3a5a40" }}
             />
             <div className="hamburger-links">
-              <ul>
+              <ul className="hamburger-nav-menu">
                 <li>
                   <Link className="link" to="/" onClick={closeMenu}>
                     Home
