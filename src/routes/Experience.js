@@ -12,7 +12,7 @@ const Experience = () => {
       title: "Computer Science Society (ACM)",
       role: "Project Chair",
       description:
-        "California State Polytechnic University, Pomona's oldest computer science club offering students on campus workshops, projects, and hackathons to participate in.",
+        "California State Polytechnic University, Pomona's largest computer science club offering students on campus workshops, projects, and hackathons to participate in.",
       image: cppcss,
       imageAltText: "cppcss",
     },
