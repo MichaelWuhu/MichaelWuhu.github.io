@@ -1,15 +1,14 @@
 .experience-card {
   background-color: var(--secondary-color);
   color: var(--light-text-color);
-  height: 15rem;
+  height: 18rem;
   width: 75rem;
   margin: 3.5rem;
   border-radius: 15px;
   display: flex;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
   flex-direction: row;
-  /* background-image: linear-gradient(45deg, #57504d, #393433); */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -33,9 +32,6 @@
 
 .experience-image-container {
   width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .experience-image {
@@ -49,7 +45,7 @@
 @media (max-width: 1200px) {
   .experience-card {
     width: 45rem;
-    height: 20rem;
+    height: 35rem;
     flex-direction: column;
   }
 
@@ -79,7 +75,7 @@
 @media (max-width: 700px) {
   .experience-card {
     width: 20rem;
-    height: 25rem;
+    height: fit-content;
     flex-direction: column;
   }
 

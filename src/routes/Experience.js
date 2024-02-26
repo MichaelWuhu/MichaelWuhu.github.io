@@ -15,6 +15,7 @@ const Experience = () => {
         "California State Polytechnic University, Pomona's largest computer science club offering students on campus workshops, projects, and hackathons to participate in.",
       image: cppcss,
       imageAltText: "cppcss",
+      link: "https://cppcss.club/",
     },
     {
       title: "Team Sprocket (FRC 3473)",
@@ -23,6 +24,7 @@ const Experience = () => {
         "Student led, robotics team in Diamond Bar participating in FIRST Robotics competitions.",
       image: sprocket,
       imageAltText: "sprocket",
+      link: "https://www.team3473.com/",
     },
   ];
 
@@ -38,6 +40,7 @@ const Experience = () => {
               experienceDescription={experience.description}
               experienceImage={experience.image}
               experienceImageAltText={experience.imageAltText}
+              experienceLink={experience.link}
             />
           ))}
         </ul>
