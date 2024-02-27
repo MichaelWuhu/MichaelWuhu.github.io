@@ -8,19 +8,24 @@
 }
 
 body {
-  background: #222326;
+  background: var(--background-color-2);
 }
 
-h1, h4, p, a {
+a {
+  text-decoration: none;
+  color: var(--light-text-color);
+}
+
+/* h1, h4, p, a {
   color: white;
   text-decoration: none;
-}
-
+} */
+/* 
 ul {
   list-style-type: none;
-}
+} */
 
-.btn {
+/* .btn {
   padding: 12px 13px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -29,9 +34,9 @@ ul {
   border: 1px solid #fff;
   font-weight: 600;
   cursor: pointer;
-}
+} */
 
-.btn-light {
+/* .btn-light {
   background: transparent;
   color: #fff;
 }
@@ -40,4 +45,4 @@ ul {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   transition: 0.3s;
-}
+} */

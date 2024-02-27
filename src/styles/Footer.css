@@ -1,6 +1,6 @@
 .footer {
-  background-color: black;
-  color: white;
+  background-color: var(--footer-color);
+  color: lightgray;
   font-size: 1rem;
   height: 20vh;
   width: 100%;
@@ -11,10 +11,14 @@
   padding: 1rem;
 }
 
+.footer a {
+  color: lightgray;
+}
+
 @media (max-width: 1200px) {
   .footer {
-    height: 40vh;
-    font-size: 0.75rem;
+    height: 30vh;
+    font-size: 1rem;
   }
 }
 

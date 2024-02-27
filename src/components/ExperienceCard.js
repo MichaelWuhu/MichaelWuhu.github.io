@@ -1,6 +1,7 @@
 import "../styles/ExperienceCard.css";
 
 import React from "react";
+import ExperienceButton from "./ExperienceButton";
 
 const ExperienceCard = (props) => {
   return (
@@ -11,11 +12,10 @@ const ExperienceCard = (props) => {
           <div className="experience-hyphen"> - </div>
           <div>{props.experienceRole}</div>
         </div>
-        {/* <div className="experience-name">{props.experienceName}</div> */}
-        {/* <div className="experience-role">{props.experienceRole}</div> */}
         <div className="experience-description">
           {props.experienceDescription}
         </div>
+        <ExperienceButton experienceLink={props.experienceLink}/>
       </div>
       <div className="experience-image-container">
         <img

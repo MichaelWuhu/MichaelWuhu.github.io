@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import "./styles/ColorPalette.css";
 
 import Home from "./routes/Home";
 import Experience from "./routes/Experience";
