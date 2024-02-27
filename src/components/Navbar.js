@@ -26,7 +26,7 @@ const Navbar = () => {
         <h1>MICHAEL WU</h1>
       </Link>
       <div className="links">
-        <ul className="nav-menu">
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link className="link" to="/" onClick={closeMenu}>
               Home
@@ -38,55 +38,20 @@ const Navbar = () => {
             </Link>
           </li>
           {/* <li>
-          <Link className="link" to="/About" onClick={closeMenu}>
+          <Link className="link" to="/About"  onClick={closeMenu}>
             About
           </Link>
         </li> */}
         </ul>
       </div>
 
-      <div className="hamburger-container" onClick={handleClick}>
-        <div className="hamburger-menu">
-          {click ? (
-            <FaTimes size={30} style={{ color: "#E0E1DD" }} />
-          ) : (
-            <FaBars size={30} style={{ color: "#E0E1DD" }} />
-          )}
-        </div>
-        {/* {click ? <div>open</div> : <div>closed</div>} */}
-      </div>
-
-      {/* <div className="hamburger" onClick={handleClick}>
+      <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <div className="hamburger-open">
-            <FaTimes
-              size={30}
-              style={color ? { color: "#588157" } : { color: "#3a5a40" }}
-            />
-            <div className="hamburger-links">
-              <ul className="hamburger-nav-menu">
-                <li>
-                  <Link className="link" to="/" onClick={closeMenu}>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/Experience" onClick={closeMenu}>
-                    Experience
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <FaTimes size={30} style={{ color: "white" }} />
         ) : (
-          <div>
-            <FaBars
-              size={30}
-              style={color ? { color: "#588157" } : { color: "#3a5a40" }}
-            />
-          </div>
+          <FaBars size={30} style={{ color: "white" }} />
         )}
-      </div> */}
+      </div>
     </div>
   );
 };
