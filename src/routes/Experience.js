@@ -4,6 +4,7 @@ import React from "react";
 import ExperienceCard from "../components/ExperienceCard";
 
 import cppcss from "../images/cpp css.png";
+import cppsea from "../images/cpp sea.jpg";
 import sprocket from "../images/sprocket.png";
 
 const Experience = () => {
@@ -16,6 +17,15 @@ const Experience = () => {
       image: cppcss,
       imageAltText: "cppcss",
       link: "https://cppcss.club/",
+    },
+    {
+      title: "Software Engineering Association",
+      role: "Frontend Dev",
+      description:
+        "A club on Cal Poly Pomona's campus focusing on software engineering. The club offers multiple projects and opportunities for students to gain experience.",
+      image: cppsea,
+      imageAltText: "cppsea",
+      link: "https://www.cppsea.com/",
     },
     {
       title: "Team Sprocket (FRC 3473)",
