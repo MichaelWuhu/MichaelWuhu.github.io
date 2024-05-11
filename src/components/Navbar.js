@@ -20,6 +20,11 @@ const Navbar = () => {
 
   window.addEventListener("scroll", changeColor);
 
+  const [open, setOpen] = useState(false);
+  const toggleHamburger = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className={color ? "header header-bg a " : "header"}>
       <Link className={color ? "header-link" : ""} to="/" onClick={closeMenu}>
@@ -45,12 +50,41 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="hamburger" onClick={handleClick}>
-        {click ? (
-          <FaTimes size={30} style={{ color: "white" }} />
-        ) : (
-          <FaBars size={30} style={{ color: "white" }} />
-        )}
+      <div className="hamburger">
+        <div id="hamburger-container">
+          <div
+            id="hamburger"
+            className={open ? "open" : ""}
+            onClick={toggleHamburger}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
+          <ul className="dropdown-item-container">
+            <Link
+              className="navLinks"
+              to="/"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              <li className="dropdown-item">Home</li>
+            </Link>
+            <Link
+              className="navLinks"
+              to="/experience"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              <li className="dropdown-item">Experience</li>
+            </Link>
+          </ul>
+        </div>
       </div>
     </div>
   );

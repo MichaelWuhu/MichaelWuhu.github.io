@@ -6,6 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 import icebreak from "../images/icebreak.png";
 import sprocketstats from "../images/sprocketstats.png";
 import anagramsSolver from "../images/anagrams solver.png";
+import catAI from "../images/catAI.png";
 
 const Home = () => {
   const projects = [
@@ -33,6 +34,14 @@ const Home = () => {
       imageAltText: "anagrams solver",
       link: "https://github.com/MichaelWuhu/Anagrams-Solver",
     },
+    {
+      title: "CatAI Discord Bot",
+      description:
+        "Discord bot that utilizes OpenAI API to give unique generated responses. The bot will only respond if pinged in the message.",
+      image: catAI,
+      imageAltText: "catAI",
+      link: "https://github.com/MichaelWuhu/CatAI",
+    },
   ];
 
   return (
@@ -49,7 +58,6 @@ const Home = () => {
         I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in
         computer science.
       </div>
-
       <div className="projects-container">
         <div className="project-header">Projects</div>
         <ul>
