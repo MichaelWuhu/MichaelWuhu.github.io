@@ -1,11 +1,27 @@
-:root {
+/* :root {
   --primary-color: #E0E1DD;
   --secondary-color: #415A77;
   --light-text-color: #E0E1DD;
   --dark-text-color: #1B263B;
   --header-color: #161717;
   --footer-color: #161717;
-  /* --footer-color: #000000; */
+  --footer-color: #000000;
   --background-color: #1B263B;
   --background-color-2: #070f17;
+  --background-color: #ebf6d3;
+}
+ */
+
+:root {
+  --cream: #fae1b0;
+  --lighter-cream: #c9b5a6;
+  --murky: #705d5d;
+  --red: #c91313;
+  --orange: #ef7f1a;
+
+  --card-background: #474745; /* light gray */
+  --background: #333333; /* dark gray */
+  --text-color: #b3f0cb; /* minty color */
+  --dark-text-color: #1c1f36; /* navy blue-ish color */
+  --button-background: #dbdbdb; /* light gray */
 }

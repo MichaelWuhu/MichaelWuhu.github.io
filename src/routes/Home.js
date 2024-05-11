@@ -46,6 +46,13 @@ const Home = () => {
 
   return (
     <div className="home">
+      <ul className="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <div className="greeting">Hi, I'm Michael</div>
       <div className="description">
         I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in

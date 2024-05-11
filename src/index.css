@@ -8,12 +8,12 @@
 }
 
 body {
-  background: var(--background-color-2);
+  background: var(--background);
 }
 
 a {
   text-decoration: none;
-  color: var(--light-text-color);
+  /* color: var(--light-text-color); */
 }
 
 /* h1, h4, p, a {
@@ -21,10 +21,14 @@ a {
   text-decoration: none;
 } */
 /* 
+} */
+/* 
 ul {
   list-style-type: none;
 } */
 
+
+/* .btn {
 /* .btn {
   padding: 12px 13px;
   font-size: 1rem;
@@ -36,6 +40,8 @@ ul {
   cursor: pointer;
 } */
 
+
+/* .btn-light {
 /* .btn-light {
   background: transparent;
   color: #fff;

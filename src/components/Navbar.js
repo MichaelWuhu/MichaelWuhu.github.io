@@ -2,11 +2,9 @@ import "../styles/Navbar.css";
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
   const [color, setColor] = useState(false);
@@ -27,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className={color ? "header header-bg a " : "header"}>
-      <Link className={color ? "header-link" : ""} to="/" onClick={closeMenu}>
+      <Link className={"header-link"} to="/" onClick={closeMenu}>
         <h1>MICHAEL WU</h1>
       </Link>
       <div className="links">
