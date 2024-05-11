@@ -2,11 +2,9 @@ import "../styles/Navbar.css";
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
   const [color, setColor] = useState(false);
