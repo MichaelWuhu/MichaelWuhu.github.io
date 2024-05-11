@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className={color ? "header header-bg a " : "header"}>
-      <Link className={color ? "header-link" : ""} to="/" onClick={closeMenu}>
+      <Link className={"header-link"} to="/" onClick={closeMenu}>
         <h1>MICHAEL WU</h1>
       </Link>
       <div className="links">

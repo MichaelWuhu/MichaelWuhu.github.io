@@ -19,7 +19,9 @@
   --red: #c91313;
   --orange: #ef7f1a;
 
-  --card-background: #d9d7d7; /* light gray */
+  --card-background: #474745; /* light gray */
   --background: #333333; /* dark gray */
   --text-color: #b3f0cb; /* minty color */
+  --dark-text-color: #1c1f36; /* navy blue-ish color */
+  --button-background: #dbdbdb; /* light gray */
 }
