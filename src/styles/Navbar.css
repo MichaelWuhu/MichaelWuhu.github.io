@@ -54,6 +54,8 @@
     text-decoration: none;
     color: var(--light-text-color);
   }
+}
+
 @media (min-width: 1200px) {
   /* HOVER ANIMATIONS */
   .link {
