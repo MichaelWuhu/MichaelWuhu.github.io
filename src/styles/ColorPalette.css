@@ -1,28 +1,22 @@
-/* :root {
-  --primary-color: #E0E1DD;
-  --secondary-color: #415A77;
-  --light-text-color: #E0E1DD;
-  --dark-text-color: #1B263B;
-  --header-color: #161717;
-  --footer-color: #161717;
-  --footer-color: #000000;
-  --background-color: #1B263B;
-  --background-color-2: #070f17;
-  --background-color: #ebf6d3;
-}
- */
-
 :root {
-  --cream: #fae1b0;
-  --lighter-cream: #c9b5a6;
-  --murky: #705d5d;
-  --red: #c91313;
-  --orange: #ef7f1a;
+  /* light mode */
+  --text: #0D130D;
+  --background:#CCCCCC;
+  --primary: #59A75C;
+  --secondary: #9ED1A0;
+  --accent: #79C77C;
 
-  --navbar-background: rgba(22, 23, 23, 1); /* dark gray */
-  --card-background: #474745; /* light gray */
-  --background: #333333; /* dark gray */
+  /* dark mode */
+  /* --text: #EDF3ED;
+  --background: #333333;
+  --primary: #45BF49;
+  --secondary: #91B192;
+  --accent: #3E9844; */
+
+  /* --navbar-background: rgba(22, 23, 23, 1); 
+  --card-background: #474745; 
+  --background: #333333; 
   --highlight-color-1: #b3f0cb;
-  --dark-text-color: #1c1f36; /* navy blue-ish color */
-  --button-background: #dbdbdb; /* light gray */
+  --dark-text-color: #1c1f36; 
+  --button-background: #dbdbdb; */
 }
