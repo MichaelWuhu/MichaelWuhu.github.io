@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={color ? "header header-bg a " : "header"}>
+    <div className={color ? "header header-bg" : "header"}>
       <Link className={"header-link"} to="/" onClick={closeMenu}>
         <h1>MICHAEL WU</h1>
       </Link>
@@ -60,8 +60,10 @@ const Navbar = () => {
             <span></span>
             <span></span>
           </div>
-        </div>
-        <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
+        </div>  
+      </div>
+
+      <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul className="dropdown-item-container">
             <Link
               className="navLinks"
@@ -83,7 +85,6 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-      </div>
     </div>
   );
 };
