@@ -1,7 +1,7 @@
-import "../styles/Home.css";
+// import "../styles/Home.css";
 
 import React from "react";
-import ProjectCard from "../components/ProjectCard";
+// import ProjectCard from "../components/ProjectCard";
 
 import icebreak from "../images/icebreak.png";
 import sprocketstats from "../images/sprocketstats.png";
@@ -46,13 +46,13 @@ const Home = () => {
 
   return (
     <div className="home">
-      <ul className="background">
+      {/* <ul className="background">
         <li></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
       <div className="greeting">Hi, I'm Michael</div>
       <div className="description">
         I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in
@@ -60,7 +60,7 @@ const Home = () => {
       </div>
       <div className="projects-container">
         <div className="project-header">Projects</div>
-        <ul>
+        {/* <ul>
           {projects.map((project) => (
             <ProjectCard
               projectName={project.title}
@@ -70,7 +70,7 @@ const Home = () => {
               projectLink={project.link}
             />
           ))}
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
