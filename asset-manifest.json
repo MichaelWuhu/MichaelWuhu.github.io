@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.14302fe6.css",
+    "main.css": "/static/css/main.62f9199f.css",
     "main.js": "/static/js/main.baf05eb4.js",
     "static/js/787.bdf370df.chunk.js": "/static/js/787.bdf370df.chunk.js",
     "static/media/icebreak.png": "/static/media/icebreak.5f8e9bf45d4c38879b4f.png",
@@ -9,12 +9,12 @@
     "static/media/catAI.png": "/static/media/catAI.e3bcf7b3adef8d12cd11.png",
     "static/media/anagrams solver.png": "/static/media/anagrams solver.5eaf783753e6299ccd28.png",
     "index.html": "/index.html",
-    "main.14302fe6.css.map": "/static/css/main.14302fe6.css.map",
+    "main.62f9199f.css.map": "/static/css/main.62f9199f.css.map",
     "main.baf05eb4.js.map": "/static/js/main.baf05eb4.js.map",
     "787.bdf370df.chunk.js.map": "/static/js/787.bdf370df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14302fe6.css",
+    "static/css/main.62f9199f.css",
     "static/js/main.baf05eb4.js"
   ]
 }
