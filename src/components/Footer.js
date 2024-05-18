@@ -12,7 +12,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub size={30} style={{ color: "white", marginRight: "1rem" }} />
+          <FaGithub size={20} style={{ color: "white", marginRight: "1rem" }} />
           https://github.com/MichaelWuhu
         </a>
       </div>
@@ -22,9 +22,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedin
-            size={30}
-            style={{ color: "white", marginRight: "1rem" }}
+          <FaLinkedin size={20} style={{ color: "white", marginRight: "1rem" }}
           />
           https://www.linkedin.com/in/michael-ml-wu/
         </a>

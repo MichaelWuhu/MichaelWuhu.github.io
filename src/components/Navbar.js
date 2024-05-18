@@ -22,8 +22,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className="nav-link" to="/Experience">
-            Experience
+          <Link className="nav-link" to="/About">
+            About
           </Link>
         </li>
       </ul>
@@ -48,8 +48,8 @@ const Navbar = () => {
           <Link to="/" onClick={() => setOpen(!open)}>
             <li className="dropdown-item">Home</li>
           </Link>
-          <Link to="/experience" onClick={() => setOpen(!open)}>
-            <li className="dropdown-item">Experience</li>
+          <Link to="/about" onClick={() => setOpen(!open)}>
+            <li className="dropdown-item">About</li>
           </Link>
         </ul>
       </div>

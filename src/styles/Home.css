@@ -1,0 +1,32 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.greeting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem 10rem;
+}
+
+.greeting {
+    font-size: 5rem;
+    color: white;
+}
+
+.description {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+    background-color: var(--secondary);
+}

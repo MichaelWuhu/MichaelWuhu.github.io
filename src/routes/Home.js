@@ -1,4 +1,4 @@
-// import "../styles/Home.css";
+import "../styles/Home.css";
 
 import React from "react";
 // import ProjectCard from "../components/ProjectCard";
@@ -45,7 +45,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="home">
+    <div className="home-container">
       {/* <ul className="background">
         <li></li>
         <li></li>
@@ -53,25 +53,22 @@ const Home = () => {
         <li></li>
         <li></li>
       </ul> */}
-      <div className="greeting">Hi, I'm Michael</div>
-      <div className="description">
-        I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in
-        computer science.
+      <div className="greeting-container">
+        <div className="greeting">Hi, I'm Michael</div>
+        <div className="description">
+          I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in
+          computer science.
+        </div>
       </div>
+
+
       <div className="projects-container">
         <div className="project-header">Projects</div>
-        {/* <ul>
-          {projects.map((project) => (
-            <ProjectCard
-              projectName={project.title}
-              projectDescription={project.description}
-              projectImage={project.image}
-              projectImageAltText={project.imageAltText}
-              projectLink={project.link}
-            />
-          ))}
-        </ul> */}
+        
       </div>
+      {/* <div className="projects-container">
+        <div className="project-header">Projects</div>
+      </div> */}
     </div>
   );
 };
