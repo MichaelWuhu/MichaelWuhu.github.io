@@ -1,6 +1,6 @@
 .project-card {
-  background-color: var(--card-background);
-  color: var(--text-color);
+  background-color: var(--secondary);
+  color: var(--text);
   height: 15rem;
   width: 75rem;
   margin: 3.5rem;
