@@ -32,7 +32,7 @@ const Navbar = () => {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link className="link" to="/" onClick={closeMenu}>
-              Home
+              About
             </Link>
           </li>
           <li>
@@ -72,7 +72,7 @@ const Navbar = () => {
                 setOpen(!open);
               }}
             >
-              <li className="dropdown-item">Home</li>
+              <li className="dropdown-item">About</li>
             </Link>
             <Link
               className="navLinks"
