@@ -1,6 +1,6 @@
 # Michael's Website
 
-Hello.
+Hello!
 
 ## Available Scripts
 
