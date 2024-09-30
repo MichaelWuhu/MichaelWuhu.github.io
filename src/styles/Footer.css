@@ -13,4 +13,42 @@
 
 .footer a {
   color: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .github {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.linkedin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+*/
+
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} 
+
+@media (max-width: 1200px) {
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer p {
+    display: none;
+  }
 }
