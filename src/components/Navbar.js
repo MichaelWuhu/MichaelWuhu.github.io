@@ -36,10 +36,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link className="link" to="/Projects" onClick={closeMenu}>
+              Projects
+            </Link>
+          </li>
+          {/* <li>
             <Link className="link" to="/Experience" onClick={closeMenu}>
               Experience
             </Link>
-          </li>
+          </li> */}
           {/* <li>
           <Link className="link" to="/About"  onClick={closeMenu}>
             About
@@ -76,13 +81,22 @@ const Navbar = () => {
             </Link>
             <Link
               className="navLinks"
+              to="/projects"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              <li className="dropdown-item">Projects</li>
+            </Link>
+            {/* <Link
+              className="navLinks"
               to="/experience"
               onClick={() => {
                 setOpen(!open);
               }}
             >
               <li className="dropdown-item">Experience</li>
-            </Link>
+            </Link> */}
           </ul>
         </div>
     </div>

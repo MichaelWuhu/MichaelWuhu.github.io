@@ -3,6 +3,7 @@ import "./index.css";
 import "./styles/ColorPalette.css";
 
 import Home from "./routes/Home";
+import Projects from "./routes/Projects";
 import Experience from "./routes/Experience";
 import About from "./routes/About";
 
@@ -19,7 +20,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Experience" element={<Experience />} />
+          <Route path="/Projects" element={<Projects />} />
+          {/* <Route path="/Experience" element={<Experience />} /> */}
           {/* <Route path="/About" element={<About />} /> */}
         </Routes>
         <Footer />
