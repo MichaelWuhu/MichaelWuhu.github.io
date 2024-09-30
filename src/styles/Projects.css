@@ -1,0 +1,25 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* color: var(--text-color); */
+    /* padding-top: 5rem; */
+    min-height: 80vh;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 8rem;
+  }
+  
+  .projects-header {
+    font-size: 3.5rem;
+    margin-top: 2.5rem;
+    text-decoration: underline;
+  }
+  

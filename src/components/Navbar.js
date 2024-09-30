@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={color ? "header header-bg a " : "header"}>
+    <div className={color ? "header header-bg" : "header"}>
       <Link className={"header-link"} to="/" onClick={closeMenu}>
         <h1>MICHAEL WU</h1>
       </Link>
@@ -32,14 +32,19 @@ const Navbar = () => {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link className="link" to="/" onClick={closeMenu}>
-              Home
+              About
             </Link>
           </li>
           <li>
+            <Link className="link" to="/Projects" onClick={closeMenu}>
+              Projects
+            </Link>
+          </li>
+          {/* <li>
             <Link className="link" to="/Experience" onClick={closeMenu}>
               Experience
             </Link>
-          </li>
+          </li> */}
           {/* <li>
           <Link className="link" to="/About"  onClick={closeMenu}>
             About
@@ -60,8 +65,10 @@ const Navbar = () => {
             <span></span>
             <span></span>
           </div>
-        </div>
-        <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
+        </div>  
+      </div>
+
+      <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul className="dropdown-item-container">
             <Link
               className="navLinks"
@@ -70,9 +77,18 @@ const Navbar = () => {
                 setOpen(!open);
               }}
             >
-              <li className="dropdown-item">Home</li>
+              <li className="dropdown-item">About</li>
             </Link>
             <Link
+              className="navLinks"
+              to="/projects"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              <li className="dropdown-item">Projects</li>
+            </Link>
+            {/* <Link
               className="navLinks"
               to="/experience"
               onClick={() => {
@@ -80,10 +96,9 @@ const Navbar = () => {
               }}
             >
               <li className="dropdown-item">Experience</li>
-            </Link>
+            </Link> */}
           </ul>
         </div>
-      </div>
     </div>
   );
 };

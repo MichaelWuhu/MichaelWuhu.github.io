@@ -9,18 +9,18 @@
     height: 2.5rem;
     width: 5rem;
     font-size: 1.5rem;
-    background-color: var(--primary);
-    color: var(--background);
-    border: 0.2rem solid var(--background);
+    background-color: var(--button-background);
+    color: var(--text);
+    border: 0.2rem solid var(--text);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .project-button:hover {
-    background-color: var(--background);
+    background-color: rgb(37, 37, 37);
     color: var(--text);
-    border: 2px solid var(--text);
+    border: 2px solid rgb(37, 37, 37);
     transition: 0.5s;
 }
 

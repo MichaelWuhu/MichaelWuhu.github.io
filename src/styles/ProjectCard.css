@@ -1,7 +1,8 @@
 .project-card {
-  background-color: var(--secondary);
-  color: var(--text);
-  height: 15rem;
+  /* background-color: var(--card-background); */
+  background-color: rgb(58, 58, 58);
+  color: var(--text-color);
+  height: 18rem;
   width: 75rem;
   margin: 3.5rem;
   border-radius: 15px;
