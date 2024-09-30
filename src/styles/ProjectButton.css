@@ -18,9 +18,9 @@
 }
 
 .project-button:hover {
-    background-color: var(--secondary);
+    background-color: rgb(37, 37, 37);
     color: var(--text);
-    border: 2px solid var(--secondary);
+    border: 2px solid rgb(37, 37, 37);
     transition: 0.5s;
 }
 
