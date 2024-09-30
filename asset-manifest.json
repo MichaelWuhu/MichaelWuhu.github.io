@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.62f9199f.css",
-    "main.js": "/static/js/main.baf05eb4.js",
+    "main.css": "/static/css/main.3ca4d138.css",
+    "main.js": "/static/js/main.cbc7bc27.js",
     "static/js/787.bdf370df.chunk.js": "/static/js/787.bdf370df.chunk.js",
+    "static/media/self.png": "/static/media/self.7d182ac26c0d8b8a70fb.png",
     "static/media/icebreak.png": "/static/media/icebreak.5f8e9bf45d4c38879b4f.png",
+    "static/media/BroncoHacks Website.png": "/static/media/BroncoHacks Website.b9b673273b27bf7fea21.png",
     "static/media/cpp css.png": "/static/media/cpp css.b400885061282022612b.png",
     "static/media/sprocketstats.png": "/static/media/sprocketstats.432ddfdafc7e47af9db6.png",
     "static/media/catAI.png": "/static/media/catAI.e3bcf7b3adef8d12cd11.png",
     "static/media/anagrams solver.png": "/static/media/anagrams solver.5eaf783753e6299ccd28.png",
     "index.html": "/index.html",
-    "main.62f9199f.css.map": "/static/css/main.62f9199f.css.map",
-    "main.baf05eb4.js.map": "/static/js/main.baf05eb4.js.map",
+    "main.3ca4d138.css.map": "/static/css/main.3ca4d138.css.map",
+    "main.cbc7bc27.js.map": "/static/js/main.cbc7bc27.js.map",
     "787.bdf370df.chunk.js.map": "/static/js/787.bdf370df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62f9199f.css",
-    "static/js/main.baf05eb4.js"
+    "static/css/main.3ca4d138.css",
+    "static/js/main.cbc7bc27.js"
   ]
 }
