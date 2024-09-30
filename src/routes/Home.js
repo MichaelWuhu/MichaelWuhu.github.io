@@ -1,7 +1,7 @@
 import "../styles/Home.css";
 
 import React from "react";
-import ProjectCard from "../components/ProjectCard";
+// import ProjectCard from "../components/ProjectCard";
 
 
 import self from "../images/self.png";
@@ -56,6 +56,7 @@ const Home = () => {
         <div className="horizontal-line"></div>
 
         <div className="description-container">
+          
           <div className="pfp-container">
             <img src={self} alt="" />
           </div>
@@ -77,26 +78,6 @@ const Home = () => {
             working with students to help their ideas come to life.
           </p>
         </div>
-        {/* </div> */}
-        {/* <div className="greeting">Hi, I'm Michael</div>
-      <div className="description">
-        I'm an undergraduate student at Cal Poly Pomona pursuing my B.S. in
-        computer science.
-      </div> */}
-        {/* <div className="projects-container">
-        <div className="project-header">Projects</div>
-        <ul>
-          {projects.map((project) => (
-            <ProjectCard
-              projectName={project.title}
-              projectDescription={project.description}
-              projectImage={project.image}
-              projectImageAltText={project.imageAltText}
-              projectLink={project.link}
-            />
-          ))}
-        </ul>
-      </div> */}
       </div>
     </div>
   );
