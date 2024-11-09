@@ -1,4 +1,31 @@
-.temp {
-    height: 500rem;
-    background-color: red;
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 8vh 10rem 1rem;
+    color: rgb(187, 187, 187);
+    background-color: rgb(20, 20, 20);
+    border-top: 8px solid;
+    border-image: linear-gradient(to right, transparent, rgb(150, 180, 200), transparent);
+    border-image-slice: 1;
+}
+
+.projects {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    list-style-type: none;
+    /* background-color: ; */
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
