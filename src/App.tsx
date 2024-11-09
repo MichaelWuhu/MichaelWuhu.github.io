@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experiences from "./sections/Experiences";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <About />
       <Projects />
-      <Experiences />
+      {/* <Experiences /> */}
+      <Footer />
     </Router>
   );
 }
