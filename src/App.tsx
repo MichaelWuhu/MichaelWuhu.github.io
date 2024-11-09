@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <About />
       <Projects />
-      {/* <Experiences /> */}
+      <Experiences />
       <Footer />
     </Router>
   );

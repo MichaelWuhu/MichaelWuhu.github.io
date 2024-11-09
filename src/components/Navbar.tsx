@@ -72,6 +72,7 @@ const Navbar = () => {
             <a
               className="navLinks"
               href="#about"
+              data-nav-link=""
               onClick={() => {
                 setOpen(!open);
               }}
@@ -89,7 +90,7 @@ const Navbar = () => {
             </a>
             <a
               className="navLinks"
-              href="#experience"
+              href="#experiences"
               onClick={() => {
                 setOpen(!open);
               }}
