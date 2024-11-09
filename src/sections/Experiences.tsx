@@ -56,13 +56,14 @@ const Experiences = () => {
       >
         Experiences
       </Typography>
-      <ul className="projects">
+      <ul className="experiences">
         {experiences.map((experience, index) => (
           <li key={index}>
             <Card
               className="experience-card"
               sx={{
                 width: "auto",
+                maxWidth: 1000,
                 color: "rgb(187, 187, 187)",
                 transition: "0.5s",
                 border: "5px solid rgb(175, 150, 200)",

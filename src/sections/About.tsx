@@ -48,6 +48,9 @@ const About = () => {
             bring their ideas come to life.
           </Typography>
         </div>
+        <br />
+        <br />
+        <div className="line" />
       </div>
     </section>
   );
