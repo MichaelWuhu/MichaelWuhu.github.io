@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    padding: 8vh 10rem 1rem;
+    padding: 10vh 10rem 10rem;
     color: rgb(187, 187, 187);
     background-color: rgb(20, 20, 20);
     border-top: 8px solid;
@@ -13,7 +13,6 @@
 }
 
 .projects {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,7 +21,6 @@
     gap: 5rem;
     padding: 2rem;
     list-style-type: none;
-    /* background-color: ; */
 }
 
 .project-card:hover {
