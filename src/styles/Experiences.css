@@ -20,7 +20,7 @@
 .experiences {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   gap: 5rem;
   padding: 2rem;
@@ -63,6 +63,5 @@
     .experience-card {
     flex-direction: column;
     padding: 0;
-    background-color: red;
   }
 }

@@ -1,10 +1,6 @@
 import "../styles/Experiences.css";
 
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Stack from "@mui/material/Stack";
-import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -56,13 +52,14 @@ const Experiences = () => {
       >
         Experiences
       </Typography>
-      <ul className="projects">
+      <ul className="experiences">
         {experiences.map((experience, index) => (
           <li key={index}>
             <Card
               className="experience-card"
               sx={{
                 width: "auto",
+                maxWidth: 1000,
                 color: "rgb(187, 187, 187)",
                 transition: "0.5s",
                 border: "5px solid rgb(175, 150, 200)",
