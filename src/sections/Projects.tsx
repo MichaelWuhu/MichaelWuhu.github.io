@@ -84,7 +84,12 @@ const Projects = () => {
               <CardHeader
                 className="project-title"
                 sx={{ textDecoration: "underline" }}
-                title={project.title}
+                title={<Typography
+                  variant="h4"
+                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
+                >
+                  {project.title}
+                </Typography>}
               />
               <CardMedia
                 component="img"

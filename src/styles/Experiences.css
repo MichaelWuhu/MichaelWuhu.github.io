@@ -1,0 +1,68 @@
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 10vh 15rem 10rem;
+  color: rgb(187, 187, 187);
+  background-color: rgb(20, 20, 20);
+  border-top: 8px solid;
+  border-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(175, 150, 200),
+    transparent
+  );
+  border-image-slice: 1;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem;
+  list-style-type: none;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(30, 30, 30);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+}
+
+.experience-card:hover {
+  transform: scale(1.01);
+  transition: transform 0.5s;
+}
+
+.experience-title-and-body {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.experience-card-content img {
+  transform: translateY(-2.5rem);
+}
+
+@media (max-width: 1200px) {
+    .experiences-container {
+        padding: 10vh 0rem 10rem;
+    }
+  
+    .experience-card {
+    flex-direction: column;
+    padding: 0;
+    background-color: red;
+  }
+}
