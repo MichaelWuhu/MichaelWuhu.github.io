@@ -1,5 +1,6 @@
 import "../styles/Navbar.css";
 import { useState } from "react";
+import resume from "../assets/Resume-MichaelWu.pdf";
 
 const Navbar = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -13,20 +14,21 @@ const Navbar = () => {
     setOpen(!open);
   };
 
+  const openPdf = () => {
+    window.open(resume, "_blank");
+  };
+
   return (
     <nav className="navbar">
-      <div className="navbar-header">
-        <a href="#/">Michael Wu</a>
-      </div>
       <ul className="navbar-links">
         <li>
           <a
-            href="#about"
+            href="#home"
             className="navbar-link"
             data-nav-link=""
             onClick={handleScroll}
           >
-            About
+            Home
           </a>
         </li>
         <li>
@@ -40,14 +42,17 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a
-            href="#experiences"
+            <a
+            href="#resume"
             className="navbar-link"
             data-nav-link=""
-            onClick={handleScroll}
-          >
-            Experiences
-          </a>
+            onClick={(e) => {
+              e.preventDefault();
+              openPdf();
+            }}
+            >
+            Resume
+            </a>
         </li>
       </ul>
 
@@ -71,13 +76,13 @@ const Navbar = () => {
           <ul className="dropdown-item-container">
             <a
               className="navLinks"
-              href="#about"
+              href="#home"
               data-nav-link=""
               onClick={() => {
                 setOpen(!open);
               }}
             >
-              <li className="dropdown-item">About</li>
+              <li className="dropdown-item">Home</li>
             </a>
             <a
               className="navLinks"
@@ -90,12 +95,14 @@ const Navbar = () => {
             </a>
             <a
               className="navLinks"
-              href="#experiences"
-              onClick={() => {
+              href="#resume"
+              onClick={(e) => {
+                e.preventDefault();
+                openPdf();
                 setOpen(!open);
               }}
             >
-              <li className="dropdown-item">Experience</li>
+              <li className="dropdown-item">Resume</li>
             </a>
           </ul>
         </div>

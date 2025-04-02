@@ -1,19 +1,20 @@
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;;
   gap: 40%;
-  padding: 2rem;
+  padding:2rem 5rem 2rem 2rem;
   width: 100%;
-  height: 10vh;
+  height: 10vh;;
   font-weight: bold;
   font-size: 1.5rem;
   position: fixed;
   top: 0;
   color: white;
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(28, 28, 28); 
   border-bottom: 2.5px solid rgb(150, 155, 200);
   z-index: 100;
+  margin-top: 0;
 }
 
 .navbar-header {
