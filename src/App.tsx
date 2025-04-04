@@ -3,14 +3,15 @@ import Navbar from "./components/Navbar";
 import About from "./sections/Home";
 import Projects from "./sections/Projects";
 import Footer from "./components/Footer";
+import ProjectsNew from "./sections/Projects";
 
 function App() {
   return (
-
     <Router>
       <Navbar />
       <About />
-      <Projects />
+      {/* <Projects /> */}
+      <ProjectsNew />
       <Footer />
     </Router>
   );

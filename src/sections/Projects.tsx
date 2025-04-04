@@ -1,133 +1,117 @@
 import "../styles/Projects.css";
+import ProjectCard from "../components/ProjectCard";
+import { useState, useEffect } from "react";
 
 import anagramsSolver from "../assets/anagramsSolver.png";
-import broncohackswebsite from "../assets/broncoHacksWebsite.png";
+import broncohackswebsite from "../assets/bhackswebsite.png";
 import icebreak from "../assets/icebreak.png";
+import ngcp from "../assets/ngcp.png";
+import omlvision from "../assets/omlvision.png";
 import sprocketstats from "../assets/sprocketstats.png";
 import catAI from "../assets/catAI.png";
 
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-
 const projects = [
-  {
-    title: "BroncoHacks Website",
-    description:
-      "Website for a university-wide hackathon with over 300 participants. Portal allowed students to register, view sponsors, and submit projects.",
-    image: broncohackswebsite,
-    alt: "broncohacks website",
-    link: "https://github.com/BroncoHacks-Website",
-  },
-  {
-    title: "Icebreak",
-    description:
-      "Mobile app created for students/users to connect with others through clubs/guilds and stay updated with events on campus. ",
-    image: icebreak,
-    alt: "icebreak ",
-    link: "https://github.com/cppsea/icebreak",
-  },
-  {
-    title: "Sprocket Stats",
-    description:
-      "Web application used for scouting/collecting data on various FRC robots. Data was then visualized in heatmaps to be used in competitions.",
-    image: sprocketstats,
-    alt: "sprocket stats",
-    link: "https://github.com/TeamSprocket/SprocketStats23",
-  },
-  {
-    title: "Anagrams Solver",
-    description:
-      "Graphical user interface which takes any amount of letters and unscrambles them to find possible anagrams.",
-    image: anagramsSolver,
-    alt: "anagrams solver",
-    link: "https://github.com/MichaelWuhu/Anagrams-Solver",
-  },
-  {
-    title: "CatAI Discord Bot",
-    description:
-      "Discord bot that utilizes OpenAI API to give unique generated responses. The bot will only respond if pinged in the message.",
-    image: catAI,
-    alt: "catAI",
-    link: "https://github.com/MichaelWuhu/CatAI",
-  },
+    {
+        title: "Northrop Grumman Collaboration Project (Ground Control Station)",
+        description:
+            "Full stack app allowing users to monitor and control autonomous vehicles. Contributed to backend using Rust, PostgreSQL, and Docker.",
+        image: ngcp,
+        link: "https://github.com/ngcp-project",
+    },
+    {
+        title: "OML Vision",
+        description:
+            "Full stack app modernizing system workflows built with React Typescript, Node.js, Apache Jena Fuseki, SPARQL, and Docker.",
+        image: omlvision,
+        link: "https://github.com/opencaesar/oml-vision",
+    },
+    {
+        title: "Icebreak",
+        description:
+            "Full stack social media app built with React Native, Node.js, Express.js, PostgreSQL, and AWS S3.",
+        image: icebreak,
+        link: "https://github.com/cppsea/icebreak",
+    },
+    {
+        title: "Sprocket Stats",
+        description:
+            "Full stack web app used for scouting/collecting data on various FRC robots using React.js, Node.js, Express.js, and MongoDB.",
+        image: sprocketstats,
+        link: "https://github.com/TeamSprocket/SprocketStats23",
+    },
+    {
+        title: "BroncoHacks Website",
+        description:
+            "Website for a university-wide hackathon made with React.js and Node.js. Live @ https://broncohacks.org",
+        image: broncohackswebsite,
+        link: "https://github.com/BroncoHacks-Website/BroncoHacks-Website",
+    },
+    {
+        title: "Anagrams Solver",
+        description:
+            "Graphical user interface to find anagrams built with python, pandas library, and tkinter.",
+        image: anagramsSolver,
+        link: "https://github.com/MichaelWuhu/Anagrams-Solver",
+    },
+    {
+        title: "CatAI Discord Bot",
+        description:
+            "AI Discord bot developed in python using OpenAI's API.",
+        image: catAI,
+        link: "https://github.com/MichaelWuhu/CatAI",
+    },
 ];
 
-const Projects = () => {
-  return (
-    <section id="projects" className="projects-container">
-      <Typography
-        variant="h3"
-        textAlign="center"
-        fontWeight={700}
-        component="div"
-      >
-        Projects
-      </Typography>
-      <ul className="projects">
-        {projects.map((project, index) => (
-          <li key={index}>
-            <Card
-              className="project-card"
-              sx={{
-                width: 345,
-                color: "rgb(187, 187, 187)",
-                transition: "0.5s",
-                border: "5px solid rgb(150, 180, 200)",
-                padding: "0.5rem",
-                backgroundColor: "transparent",
-              }}
-            >
-              <CardHeader
-                className="project-title"
-                sx={{ textDecoration: "underline" }}
-                title={<Typography
-                  variant="h4"
-                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                >
-                  {project.title}
-                </Typography>}
-              />
-              <CardMedia
-                component="img"
-                height="200"
-                image={project.image}
-                alt={project.alt}
-                sx={{ objectFit: "contain" }}
-              />
-              <CardContent>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "rgb(187, 187, 187)", fontSize: "1.1rem" }}
-                >
-                  {project.description}
-                </Typography>
-              </CardContent>
-              {/* <CardActions disableSpacing>
-                <ExpandMore
-                  expand={expanded}
-                  onClick={handleExpandClick}
-                  aria-expanded={expanded}
-                  aria-label="show more"
-                >
-                  <ExpandMoreIcon />
-                </ExpandMore>
-              </CardActions>
-              <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                  <Typography sx={{ marginBottom: 2 }}>Method:</Typography>
-                  hihihihi
-                </CardContent>
-              </Collapse> */}
-            </Card>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-};
+const ProjectsNew = () => {
 
-export default Projects;
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 1200);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    return (
+        <section id="projects" className="projects-container">
+            <h1 className="projects-container-header">Projects</h1>
+            {isMobile ?
+                <ul className="projects-list">
+                    {projects.map((project) => (
+                        <ProjectCard
+                            title={project.title}
+                            description={project.description}
+                            image={project.image}
+                            isLeft={true}
+                            link={project.link}
+                            isMobile={true}
+                        />
+                    ))}
+                </ul>
+                :
+                <ul className="projects-list">
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            title={project.title}
+                            description={project.description}
+                            image={project.image}
+                            isLeft={index % 2 === 0}
+                            link={project.link}
+                            isMobile={false}
+                        />
+                    ))}
+                </ul>
+            }
+
+        </section>
+    )
+}
+
+export default ProjectsNew;
