@@ -10,9 +10,9 @@ const About = () => {
         <h1>
           Michael Wu
         </h1>
-        <body>
+        <p>
           Thanks for checking out my website!
-        </body>
+        </p>
       </div>
       <img src={picture} alt="" className="" />
     </section >
