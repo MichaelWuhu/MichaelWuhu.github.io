@@ -9,6 +9,8 @@ import ngcp from "../assets/ngcp.png";
 import omlvision from "../assets/omlvision.png";
 import sprocketstats from "../assets/sprocketstats.png";
 import catAI from "../assets/catAI.png";
+import basstab from "../assets/basstab.png";
+import lifeguardvision from "../assets/lifeguardvision.png";
 
 const projects = [
     {
@@ -38,6 +40,20 @@ const projects = [
             "Full stack web app used for scouting/collecting data on various FRC robots using React.js, Node.js, Express.js, and MongoDB.",
         image: sprocketstats,
         link: "https://github.com/TeamSprocket/SprocketStats23",
+    },
+    {
+        title: "Lifeguard Vision",
+        description:
+            "AI-powered web app that helps lifeguards detect passive drowning in real time using computer vision. Built with Next.js, FastAPI, MediaPipe, and OpenCV.",
+        image: lifeguardvision,
+        link: "https://github.com/MichaelWuhu/LifeguardVision",
+    },
+    {
+        title: "BassTab",
+        description:
+            "Full-stack web app that generates bass guitar tablature from .mp3 files using React, FastAPI, and machine learning models built on PyTorch (Demucs for source separation, CREPE for pitch detection).",
+        image: basstab,
+        link: "https://github.com/MichaelWuhu/BassTab",
     },
     {
         title: "BroncoHacks Website",
