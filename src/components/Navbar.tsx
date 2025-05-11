@@ -1,6 +1,6 @@
 import "../styles/Navbar.css";
 import { useState } from "react";
-import resume from "../assets/Resume-MichaelWu.pdf";
+import resume from "../assets/Michael Wu - Resume.pdf";
 
 const Navbar = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
